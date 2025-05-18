@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liao.springbootinit.mapper.InterfaceInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.liao.springbootinit.entity.InterfaceInfo">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="description" property="description" />
+        <result column="url" property="url" />
+        <result column="requestHeader" property="requestHeader" />
+        <result column="responseHeader" property="responseHeader" />
+        <result column="status" property="status" />
+        <result column="method" property="method" />
+        <result column="userId" property="userId" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime" />
+    </resultMap>
+
+</mapper>
