@@ -1,32 +1,19 @@
-package com.yupi.springbootinit.model.dto.interfaceInfo;
+package com.yupi.springbootinit.model.vo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.yupi.springbootinit.common.PageRequest;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.List;
 
-/**
- * 查询请求
- *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
- */
-@EqualsAndHashCode(callSuper = true)
+
 @Data
-public class InterfaceInfoQueryRequest extends PageRequest implements Serializable {
+public class InterfaceInfoVO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
      * 主键
      */
-    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     /**
@@ -65,9 +52,17 @@ public class InterfaceInfoQueryRequest extends PageRequest implements Serializab
     private String method;
 
     /**
-     * 请求类型
+     * 创建人
      */
     private Long userId;
 
+    /**
+     * 创建时间
+     */
+    private LocalDateTime createTime;
 
+    /**
+     * 更新时间
+     */
+    private LocalDateTime updateTime;
 }

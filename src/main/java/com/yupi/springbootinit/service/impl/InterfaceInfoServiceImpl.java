@@ -1,14 +1,20 @@
 package com.yupi.springbootinit.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.yupi.springbootinit.common.ErrorCode;
 import com.yupi.springbootinit.exception.BusinessException;
 import com.yupi.springbootinit.exception.ThrowUtils;
 import com.yupi.springbootinit.mapper.InterfaceInfoMapper;
+import com.yupi.springbootinit.model.dto.interfaceInfo.InterfaceInfoQueryRequest;
 import com.yupi.springbootinit.model.entity.InterfaceInfo;
+import com.yupi.springbootinit.model.vo.InterfaceInfoVO;
 import com.yupi.springbootinit.service.InterfaceInfoService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * <p>
@@ -39,5 +45,25 @@ public class InterfaceInfoServiceImpl extends ServiceImpl<InterfaceInfoMapper, I
             throw new BusinessException(ErrorCode.PARAMS_ERROR, "接口名过长");
         }
 
+    }
+
+    @Override
+    public QueryWrapper<InterfaceInfo> getQueryWrapper(InterfaceInfoQueryRequest postQueryRequest) {
+        return null;
+    }
+
+    @Override
+    public Page<InterfaceInfo> searchFromEs(InterfaceInfoQueryRequest postQueryRequest) {
+        return null;
+    }
+
+    @Override
+    public InterfaceInfoVO getInterfaceInfoVO(InterfaceInfo post, HttpServletRequest request) {
+        return null;
+    }
+
+    @Override
+    public Page<InterfaceInfoVO> getInterfaceInfoVOPage(Page<InterfaceInfo> postPage, HttpServletRequest request) {
+        return null;
     }
 }
