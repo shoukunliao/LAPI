@@ -1,5 +1,6 @@
-package com.liao.springbootinit.entity;
+package com.yupi.springbootinit.model.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import java.time.LocalDateTime;
