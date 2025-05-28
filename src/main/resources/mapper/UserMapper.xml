@@ -6,21 +6,21 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yupi.springbootinit.mapper.UserMapper">
     <resultMap id="BaseResultMap" type="com.yupi.springbootinit.model.entity.User">
-        <id property="id" column="id" jdbcType="BIGINT"/>
-        <result property="unionId" column="unionId" jdbcType="VARCHAR"/>
-        <result property="mpOpenId" column="mpOpenId" jdbcType="VARCHAR"/>
-        <result property="userName" column="userName" jdbcType="VARCHAR"/>
-        <result property="userAvatar" column="userAvatar" jdbcType="VARCHAR"/>
-        <result property="userProfile" column="userProfile" jdbcType="VARCHAR"/>
-        <result property="userRole" column="userRole" jdbcType="VARCHAR"/>
-        <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
-        <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
-        <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+        <id column="id" property="id" />
+        <result column="userAccount" property="userAccount" />
+        <result column="userPassword" property="userPassword" />
+        <result column="unionId" property="unionId" />
+        <result column="mpOpenId" property="mpOpenId" />
+        <result column="userName" property="userName" />
+        <result column="userAvatar" property="userAvatar" />
+        <result column="userProfile" property="userProfile" />
+        <result column="userRole" property="userRole" />
+        <result column="secretKey" property="secretKey" />
+        <result column="accessId" property="accessId" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime" />
+        <result column="isDelete" property="isDelete" />
     </resultMap>
 
-    <sql id="Base_Column_List">
-        id,unionId,mpOpenId,
-        userName,userAvatar,userProfile,
-        userRole,createTime,updateTime,isDelete
-    </sql>
+
 </mapper>

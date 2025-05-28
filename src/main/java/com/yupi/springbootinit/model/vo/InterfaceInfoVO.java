@@ -32,6 +32,11 @@ public class InterfaceInfoVO implements Serializable {
     private String url;
 
     /**
+     * 参数
+     */
+    private String params;
+
+    /**
      * 请求头
      */
     private String requestHeader;
