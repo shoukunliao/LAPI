@@ -8,6 +8,7 @@
         <result column="name" property="name" />
         <result column="description" property="description" />
         <result column="url" property="url" />
+        <result column="params" property="params" />
         <result column="requestHeader" property="requestHeader" />
         <result column="responseHeader" property="responseHeader" />
         <result column="status" property="status" />

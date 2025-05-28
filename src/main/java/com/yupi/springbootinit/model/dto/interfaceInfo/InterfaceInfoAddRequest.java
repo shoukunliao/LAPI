@@ -1,12 +1,9 @@
 package com.yupi.springbootinit.model.dto.interfaceInfo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 
 
 /**
@@ -23,37 +20,43 @@ public class InterfaceInfoAddRequest implements Serializable {
     /**
      * 名称
      */
-    @TableField("name")
+
     private String name;
 
     /**
      * 描述
      */
-    @TableField("description")
+
     private String description;
 
     /**
      * 接口地址
      */
-    @TableField("url")
+
     private String url;
+
+    /**
+     * 请求参数
+     */
+
+    private String params;
 
     /**
      * 请求头
      */
-    @TableField("requestHeader")
+
     private String requestHeader;
 
     /**
      * 响应头
      */
-    @TableField("responseHeader")
+
     private String responseHeader;
 
     /**
      * 请求类型
      */
-    @TableField("method")
+
     private String method;
 
 
